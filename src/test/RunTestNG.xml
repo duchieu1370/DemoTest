@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="CRMSuite" verbose="1">
+
+    <parameter name="browserType" value="chrome"></parameter>
+    <parameter name="webURL" value="https://crm.anhtester.com/signin"></parameter>
+
+    <test name="CRMTest">
+        <classes>
+            <class name="anhtester.com.testcases.ProjectTest">
+                <methods>
+                    <include name="signInPage" />
+                    <include name="openProjectPage" />
+<!--                    <include name="openAddProjectPage" />-->
+<!--                    <include name="addProject" />-->
+<!--                    <include name="searchProject" />-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
